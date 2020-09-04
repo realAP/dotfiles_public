@@ -13,4 +13,4 @@ stow vim
 
 stow nvim
 
-to be happy
+be happy
