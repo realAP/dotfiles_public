@@ -32,7 +32,7 @@ cd nerd-fonts
 ## configure neovim
 ```bash
 sudo apt install silversearcher-ag
-git checkout https://github.com/realAP/dotfiles_public
+git clone https://github.com/realAP/dotfiles_public
 cd dotfiles_public
 stow vim
 stow nvim
