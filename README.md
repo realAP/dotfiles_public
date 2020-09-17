@@ -1,6 +1,6 @@
 **dotfiles_public**
 
-## install neovim or build from source
+## PREPARE: install neovim or build from source
 ### build from source
 ```bash
 mkdir -p ~/github
@@ -13,31 +13,50 @@ make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
 
-## install stow
+## PREPARE: install stow and dependencies
 ```bash
-sudo apt install stow
+sudo apt install stow curl
 ```
-## install latest nodejs
+## PREPARE: install latest nodejs
+(yes, really, I am, sorry)
 ```bash
 sudo apt-get install nodejs npm
 ```
 
-## install theme, this takes a while
+## PREPARE: install theme, this takes a while
 ```bash
 cd ~/github
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts
 cd nerd-fonts
 ./install.sh DroidSansMono
 ```
-## configure neovim
+## INSTALL: clone config
+Please note that you have to clone the repository in your `$HOME` at the moment!
 ```bash
 sudo apt install silversearcher-ag
 git clone https://github.com/realAP/dotfiles_public
 cd dotfiles_public
+```
+
+#### configure vim (optionally)
+```bash
 stow vim
+```
+
+#### configure neovim
+```bash
 stow nvim
 ```
-## run neovim
+
+## USE: run neovim
+This will install all further dependencies on the first execution
 ```bash
 nvim
 ```
+
+## Handy shortcuts
+
+- TODO
+
+## TOOD
+ - explain all the changes being made (for example fuzzyfinder entry in .bashrc)
