@@ -18,7 +18,7 @@ sudo make install
 sudo apt install stow curl
 ```
 ## PREPARE: install latest nodejs
-(yes, really, I am, sorry)
+(yes, really, I am sorry)
 ```bash
 sudo apt-get install nodejs npm
 ```
@@ -58,5 +58,5 @@ nvim
 
 - TODO
 
-## TOOD
+## TODO
  - explain all the changes being made (for example fuzzyfinder entry in .bashrc)
